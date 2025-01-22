@@ -8,7 +8,7 @@ const Home = () => {
     await supabase.auth.signInWithOAuth({
       provider: 'kakao',
       options: {
-        redirectTo: window.origin + '/main',
+        redirectTo: 'https://recordtodo.yoyobar.xyz' + '/main',
       },
     });
   };
