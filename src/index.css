@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  box-sizing: border-box;
+  overflow: hidden !important;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../assets/fonts/PretendardVariable.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../assets/fonts/PretendardVariable.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
+
+* {
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgb(115, 115, 115, 1) transparent;
+}
+
+/* Webkit (Chrome, Safari) */
+*::-webkit-scrollbar {
+  width: 9px;
+  height: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+  border-radius: 5px;
+  margin: 10px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #dad0ea;
+  border-radius: 10px;
+}
