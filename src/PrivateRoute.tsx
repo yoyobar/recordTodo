@@ -29,7 +29,7 @@ const PrivateRoute: React.FC<PrivateRouteProps> = ({ children }) => {
     checkSession();
   }, []);
 
-  if (isAuthenticated === null) {
+  if (isAuthenticated == null) {
     return <Loading />;
   }
 

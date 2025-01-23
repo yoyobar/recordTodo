@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+:root,
+html,
+body {
   box-sizing: border-box;
   overflow: hidden !important;
   margin: 0;
