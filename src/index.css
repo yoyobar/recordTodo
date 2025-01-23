@@ -10,6 +10,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
+
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
 }
 
 @font-face {
